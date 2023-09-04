@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Fun</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    .popines{
+        font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class=" w-[100vw] h-[100vh]">
+
+    <header class="popines flex flex-col lg:flex-row items-center justify-between w-[80%] mx-auto pt-[3rem]">
+        <div class="flex gap-[3rem]">
+            <a class="text-black text-base font-medium hover:text-blue-400" href="">Home</a>
+            <a class="text-black text-base font-medium hover:text-blue-400" href="">About</a>
+            <a class="text-black text-base font-medium hover:text-blue-400" href="">Blog</a>
+            <a class="text-black text-base font-medium hover:text-blue-400" href="">Pages</a>
+            <a class="text-black text-base font-medium hover:text-blue-400" href="">Contact</a>
+        </div>
+        <div class="flex items-center gap-[2rem]">
+            <a class="text-black text-base font-medium flex gap-2 hover:text-blue-400" href="">English <img src="./image/icon.svg" alt=""></a>
+            <a class="text-[#4461F2] text-base font-semibold" href="">Sign in</a>
+            <button class="w-[7rem] h-[2.6rem] rounded-[1.31rem] bg-white shadow-sm text-[#4461F2] text-base font-semibold">Register</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex flex-col lg:flex-row justify-between w-[80%] mx-auto items-center h-[70vh]">
+            <div>
+                <h1 class="text-black popines text-[3.6rem] font-semibold leading-[4.5rem]">Sign In to <br>
+                    Recharge Direct</h1>
+                    <h2 class="text-black popines text-[1.4rem] font-medium mt-16">if you don’t an account <br>
+                        you can <span class="text-[#4461F2]">Register here!</span></h2>
+            </div>
+            <div>
+                <img src="./image/char.png" alt="">
+            </div>
+            <div>
+                <div id="image-chnage-container" class=" w-[25rem] mt-[5rem]">
+                    <div>
+                        <img class="mx-auto text-center" src="./image/1st.png" alt="">
+                    </div>
+                </div>
+                <div class="relative py-2">
+                    <input id="email" class="w-[25rem] h-[4.81rem] bg-[#EAF0F7] border-none text-[#4F555A] pl-5 rounded-xl" type="email" placeholder="Enter Email">
+                    <img class="absolute top-[1.8rem] right-4 " src="./image/xicon.svg" alt="">
+                </div>
+                <div class="relative py-2">
+                    <input id="password" class="w-[25rem] h-[4.81rem] bg-[#EAF0F7] border-none text-[#4F555A] pl-5 rounded-xl" type="password" placeholder="......">
+                    <img class="absolute top-[1.8rem] right-4 " src="./image/hideicon.svg" alt="">
+                </div>
+
+                <div class="float-right mt-4">
+                    <h1 class="popines text-[#C7C7C7] text-sm font-medium cursor-pointer">Recover Password?</h1>
+                </div>
+                <div>
+                    <button class="capitalize w-[25rem] h-[3.75rem] rounded-xl bg-[#4461F2] shadow-sm mt-6 text-white popines font-semibold">Sign in</button>
+                </div>
+                <div class=" flex justify-between items-center">
+                    <img src="./image/google.svg" alt="">
+                    <img class="pt-4" src="./image/apple.svg" alt="">
+                    <img src="./image/fb.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
